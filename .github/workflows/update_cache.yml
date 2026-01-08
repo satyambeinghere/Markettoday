@@ -1,8 +1,11 @@
 name: Update Market Cache
 
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: "30 3 * * 1-5"   # 9:00 AM IST (Mon–Fri)
+    - cron: "30 3 * * 1-5"
   workflow_dispatch:
 
 jobs:
